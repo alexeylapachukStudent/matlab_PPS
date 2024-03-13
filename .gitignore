@@ -1,30 +1,32 @@
-# Gradle files
-.gradle/
-build/
+### MATLAB ###
+# Windows default autosave extension
+*.asv
 
-# Local configuration file (sdk path, etc)
-local.properties
+# OSX / *nix default autosave extension
+*.m~
 
-# Log/OS Files
-*.log
+# Compiled MEX binaries (all platforms)
+*.mex*
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
 
-# IntelliJ
-*.iml
-.idea/
+# Generated helpsearch folders
+helpsearch*/
 
-# Keystore files
-*.jks
-*.keystore
+# Simulink code generation folders
+slprj/
+sccprj/
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Matlab code generation folders
+codegen/
 
-# Android Profiling
-*.hprof
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
+
+# Octave session info
+octave-workspace
