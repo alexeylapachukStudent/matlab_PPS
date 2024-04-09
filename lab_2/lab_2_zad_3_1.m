@@ -3,7 +3,7 @@ f1 = 5;
 f0 = 1;
 t1 = 5;
 
-N = 200;
+N = 100;
 
 % Wektor czasu
 t = 0:1/fp:(N-1)/fp;

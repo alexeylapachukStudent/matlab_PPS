@@ -10,7 +10,7 @@ fi3 = 0;
 
 A1 = 2;
 A2 = 6;
-A3 = 4;
+A3 = 1;
 
 k0 = 2;
 
@@ -21,17 +21,12 @@ N = 1000;
 t = 0:1/fp:(N-1)/fp; 
 x1 = k0 + A1*sin(2*pi*f1*t+fi1);
 x2 = k0 + A2*sin(2*pi*f2*t+fi2);
-
-% Definicja czasu trwania trzeciej składowej 
-
-start_time = 2;
-end_time = 3;
+x3 = k0 + A3*sin(2*pi*f3*t+fi3);
 
 % Tworzenie trzeciej składowej na podstawie 2 oraz 3 sekundy
 
-x3 = zeros(size(t));
-index = (t >= start_time) & (t <= end_time);
-x3(index) = k0 + A3*sin(2*pi*f3*t(index)+fi3);
+x3(1:400) = zeros;
+x3(801:1000) = zeros;
 
 
 x = x1 + x2 + x3;

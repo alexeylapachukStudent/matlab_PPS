@@ -1,10 +1,12 @@
 % Wczytanie pliku audio
 
-[x, Fs] = audioread('Plik_audio.mvw');
+[x, Fs] = audioread('mbi04becz.wav');
 
 
 % Wektor czasu, obliczony na podstawie sygnału audio
 t = (0:length(x) - 1)/Fs;
+
+N = Fs * t;
 
 % Rysowanie przebiegu sygnału
 
@@ -17,7 +19,8 @@ ylabel('Amplituda');
 sound(x, Fs);
 
 % Wycięcie sygnału oraz jego odsłuchanie
-x2 = x(Fs * 1 + 1: Fs * 2);
+x2 = x(Fs * 0.2 + 1: Fs * 0.4);
 sound(x2, Fs);
+
 
 
